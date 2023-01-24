@@ -38,7 +38,7 @@ figure {
 body {
     background-color: var(--auxiliry-blue);
     overflow-x: hidden;
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
 }
 
 .button {
@@ -83,4 +83,34 @@ li {
 h1,
 h3 {
     font-size: 1.2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.1em;
+}
+.leading {
+    font-size: 1.1em;
+}
+
+/* small tablet size */
+@media screen and (min-width: 620px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* large tablets and laptop size */
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* desktop style */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
 }
