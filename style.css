@@ -1,6 +1,7 @@
 :root {
     --primary-yellow: #FFC636;
     --auxiliry-blue: #0a0b5b;
+    --auxiliry-deepblue: #07083E;
     --border-color: #9893D8;
     --border-text: #f2f2f2;
     --header-font: #DDDBFF;
@@ -101,6 +102,7 @@ h4 {
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
 }
 
 .site-nav {
@@ -140,6 +142,63 @@ h4 {
 
 .welcome_text a {
     margin: 20px 0;
+}
+
+#portfolio {
+    background-image: url(assets/square_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 30px 20px;
+}
+
+#portfolio h3 {
+    text-align: center;
+}
+
+.projects a {
+    grid-column: 1 / 9;
+    margin: 20px 0;
+    display: flex;
+}
+
+.projects a * {
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+}
+
+.projects h4 {
+    color: var(--border-color);
+}
+
+#skills {
+    padding: 30px 20px;
+    background-color: var(--auxiliry-deepblue);
+}
+
+#skills h3 {
+    text-align: center;
+}
+
+#skills ul {
+    margin: 30px 0;
+}
+
+#skills li {
+    background: rgba(0, 0, 0, 0.4);
+    grid-column: span 4;
+    padding: 10px;
+    text-align: center;
+}
+
+#skills li h4 {
+    margin: 20px 0;
+}
+
+#skills li img {
+    height: 110px;
+    margin: 10px;
 }
 
 /* small tablet size */
