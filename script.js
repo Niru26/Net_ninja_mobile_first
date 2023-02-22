@@ -1,20 +1,7 @@
-let n = 140;
-console.log(n);
-let m = 175;
-console.log(m);
-let count = m * n;
-console.log(count);
+let a = 5;
 
-while (m != n) {
-    if (n > m) {
-        n = n - m;
-    }
-    else {
-        m = m - n;
-    }
-    console.log("In code:");
-    console.log(`n:${n} and m:${m}`);
+let b = 3
+b = a;
+a = 7;
 
-}
-
-console.log(count / n);
+console.log(`${b} - b, ${a} - a`);
